@@ -27,25 +27,19 @@ Wählen Sie zunächst welches Custom Control Sie implementieren möchten. (Conve
 Danach begeben Sie sich in Ihre gewünschte Klasse wo Sie das UI platzieren möchten.
 
 **Converter Control**
-1. Fügen Sie zunächst vier Deklarationen <br>
-<code>private ConverterControl convertercontrol15;</code><br> 
-<code>private ConverterControl convertercontrol16;</code><br> 
-<code>private ConverterControl convertercontrol17;</code><br> 
-<code>private ConverterControl convertercontrol18;</code> ein.<br>
+1. Fügen Sie zunächst folgende Deklarationen
+<code>private ConverterControl convertercontrol;</code> ein.<br>
 
-2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie die Converter mit <br>
-<code> convertercontrol15 = new ConverterControl(); </code><br> 
-<code> convertercontrol16 = new ConverterControl(); </code><br>
-<code> convertercontrol17 = new ConverterControl(); </code><br> 
-<code> convertercontrol18 = new ConverterControl(); </code><br>
+2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie den Converter mit <br>
+<code> convertercontrol = new ConverterControl(); </code><br> 
 
 3. Nun müssen wir die Bindings anpassen. Ersetzen Sie die herkömmliche <code>textProperty()</code> mit unseren Properties.
 Diese können wie gefolgt aussehen.
 Beispiel: 
-<code>      convertercontrol15.firstYearProperty().bindBidirectional(model.getWindparkProxy().production2015MwhProperty()); </code> <br>
-    <code>  convertercontrol16.secondYearProperty().bindBidirectional(model.getWindparkProxy().production2016MwhProperty()); </code>
-   <code>     convertercontrol17.thirdYearProperty().bindBidirectional(model.getWindparkProxy().production2017MwhProperty()); </code>
-     <code>   convertercontrol18.fourtfhYearProperty().bindBidirectional(model.getWindparkProxy().production2018MwhProperty()); </code>
+<code>      convertercontrol.firstYearProperty().bindBidirectional(model.getWindparkProxy().production2015MwhProperty()); </code> <br>
+    <code>  convertercontrol.secondYearProperty().bindBidirectional(model.getWindparkProxy().production2016MwhProperty()); </code>
+   <code>     convertercontrol.thirdYearProperty().bindBidirectional(model.getWindparkProxy().production2017MwhProperty()); </code>
+     <code>   convertercontrol.fourtfhYearProperty().bindBidirectional(model.getWindparkProxy().production2018MwhProperty()); </code>
  
  Unsere Properties stehen für die 4 detailliertenw Jahre. <br>
  **Produktionsjahr 2015 -> firstYearProperty() <br>
@@ -54,16 +48,26 @@ Beispiel:
  Produktionsjahr 2018 -> fourtYearProperty()** <br>
  
  **Slider Control**
-1. Fügen Sie zunächst eine Deklaration <code>private SliderControl sliderControl;</code> ein.
-2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie den Converter mit <code> sliderControl = new SliderControl(); </code>
+1. Fügen Sie zunächst folgende vier Deklaration <br>
+<code>private SliderControl sliderControl15;</code> <br>
+<code>private SliderControl sliderControl16;</code> <br>
+<code>private SliderControl sliderControl17;</code> <br>
+<code>private SliderControl sliderControl18;</code>ein. <br>
+
+2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie die Converter mit <br>
+<code> sliderControl15 = new SliderControl(); </code><br>
+<code> sliderControl16 = new SliderControl(); </code><br>
+<code> sliderControl17 = new SliderControl(); </code><br>
+<code> sliderControl18 = new SliderControl(); </code><br>
+
 3. Nun müssen wir die Bindings anpassen. Ersetzen Sie die herkömmliche <code>textProperty()</code> mit unseren Properties.
 Diese können wie gefolgt aussehen.
 Beispiel: 
-<code>sliderControl.valueProperty().bindBidirectional(model.getWindparkProxy().production2015MwhProperty());
+<code>sliderControl15.valueProperty().bindBidirectional(model.getWindparkProxy().production2015MwhProperty());
 ); </code> <br>
-    <code>  sliderControl.valueProperty().bindBidirectional(model.getWindparkProxy().production2016MwhProperty());</code>
-   <code>     sliderControl.valueProperty().bindBidirectional(model.getWindparkProxy().production2017MwhProperty());</code>
-     <code>   sliderControl.valueProperty().bindBidirectional(model.getWindparkProxy().production2018MwhProperty()); </code>
+    <code>  sliderControl16.valueProperty().bindBidirectional(model.getWindparkProxy().production2016MwhProperty());</code>
+   <code>     sliderControl17.valueProperty().bindBidirectional(model.getWindparkProxy().production2017MwhProperty());</code>
+     <code>   sliderControl18.valueProperty().bindBidirectional(model.getWindparkProxy().production2018MwhProperty()); </code>
  
  Es gibt nur eine Property die für alle Jahre gilt: <code>valueProperty()</code>
  **WICHTIG!**
