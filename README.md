@@ -14,12 +14,12 @@ Zum zunächst unser Custom Control zu implementieren müssen Sie das consumption
 
 Um dieses Custom Control zu brauchen, benötigen Sie die Klasse <code>ConverterControl.java</code><br>
 
-**Business control slider**
+<br>**Business control slider**
 ![Screenshot](slider_info.png) <br>
 
 Um dieses Custom Business Control zu brauchen, benötigen Sie die Klasse <code>SliderControl.java</code><br>
 
-# Implementieren
+<br># Implementieren
 
 Wählen Sie zunächst welches Custom Control Sie implementieren möchten. (Converter oder Slider)
 Danach begeben Sie sich in Ihre gewünschte Klasse wo Sie das UI platzieren möchten.
