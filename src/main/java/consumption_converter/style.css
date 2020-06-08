@@ -1,8 +1,3 @@
-.slider-control {
-    -fx-padding:          10;
-    -base-color: rgb(243, 243, 243);
-    -fx-background-color: rgb(255, 255, 250);
-}
 
 .slider-control .drawing-pane {
     -fx-background-color: transparent;
