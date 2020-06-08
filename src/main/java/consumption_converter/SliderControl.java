@@ -49,7 +49,7 @@ public class SliderControl extends Control {
     }
 
     private void initializeSelf() {
-         getStyleClass().add("business-control");
+         getStyleClass().add("slider-control");
          setUserFacingText(convertToString(getValue()));
     }
 

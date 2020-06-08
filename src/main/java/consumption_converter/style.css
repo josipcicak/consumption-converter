@@ -1,38 +1,38 @@
-.business-control {
+.slider-control {
     -fx-padding:          10;
     -base-color: rgb(243, 243, 243);
     -fx-background-color: rgb(255, 255, 250);
 }
 
-.business-control .drawing-pane {
+.slider-control .drawing-pane {
     -fx-background-color: transparent;
 }
 
-.business-control .editable-node {
+.slider-control .editable-node {
     -fx-font-family:      'ArcaMajora3-Bold';
     -fx-font-size:        14;
     -fx-text-fill:        derive(-base-color, -30%);
     -fx-prompt-text-fill: derive(-base-color, 40%);
 }
 
-.business-control .editable-node:focused {
+.slider-control .editable-node:focused {
     -fx-prompt-text-fill: derive(-base-color, 40%);
     -fx-highlight-fill:   derive(-base-color, -30%);
 }
 
-.business-control:invalid .editable-node {
+.slider-control:invalid .editable-node {
     -fx-font-family: 'Lato Light';
     -fx-text-fill:   red;
 }
 
-.business-control:mandatory .editable-node:focused {
+.slider-control:mandatory .editable-node:focused {
     -fx-background-color: white;
     -fx-border-color:     derive(-base-color, -30%);
     -fx-border-width:     2;
     -fx-border-radius:    4;
 }
 
-.business-control .read-only-node {
+.slider-control .read-only-node {
     -fx-font-family:     'DS-Digital';
     -fx-pref-width:      80;
     -fx-max-width:       1024;
@@ -42,7 +42,7 @@
     -fx-text-fill:       rgb(139, 86, 70);
 }
 
-.business-control .chooser-button {
+.slider-control .chooser-button {
     -fx-font-family:      'FontAwesome';
     -fx-border-color:     transparent;
     -fx-background-color: transparent;
@@ -55,7 +55,7 @@
     -fx-cursor:           hand;
 }
 
-.business-control .chooser-button:hover {
+.slider-control .chooser-button:hover {
     -fx-background-color:  derive(-base-color, 70%);
     -fx-background-radius: 1024;
     -fx-background-insets: 4;
