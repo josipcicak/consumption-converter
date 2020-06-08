@@ -7,7 +7,7 @@ Dieser Custom Control bietet eine klare Übersicht, welche Geräte im Haushalt a
 
 **Package**
 
-Zum zunächst unser Custom Control zu implementieren müssen Sie das consumption-converter Projekt herunterladen. Kopieren Sie den gesamten <code>consumption_converter</code> Ordner.
+Zum zunächst unser Custom Control zu implementieren müssen Sie das consumption-converter Projekt herunterladen. Kopieren Sie den gesamten <code>consumption_converter</code> Ordner und den Ordner mit den Ressourcen.
 
 **UI Converter Dashboard**
 
@@ -28,10 +28,10 @@ Danach begeben Sie sich in Ihre gewünschte Klasse wo Sie das UI platzieren möc
 3. Nun müssen wir die Bindings anpassen. Ersetzen Sie die herkömmliche <code>textProperty()</code> mit unseren Properties.
 Diese können wie gefolgt aussehen.
 Beispiel: 
-<code>      businessControl.firstYearProperty().bindBidirectional(model.getWindparkProxy().production2015MwhProperty()); </code> <br>
-    <code>  businessControl.secondYearProperty().bind(model.getWindparkProxy().production2016MwhProperty());</code>
-   <code>     businessControl.thirdYearProperty().bind(model.getWindparkProxy().production2017MwhProperty());</code>
-     <code>   businessControl.fourtfhYearProperty().bind(model.getWindparkProxy().production2018MwhProperty()); </code>
+<code>      convertercontrol.firstYearProperty().bindBidirectional(model.getWindparkProxy().production2015MwhProperty()); </code> <br>
+    <code>  convertercontrol.secondYearProperty().bind(model.getWindparkProxy().production2016MwhProperty());</code>
+   <code>     convertercontrol.thirdYearProperty().bind(model.getWindparkProxy().production2017MwhProperty());</code>
+     <code>   convertercontrol.fourtfhYearProperty().bind(model.getWindparkProxy().production2018MwhProperty()); </code>
  
  Unsere Properties stehen für die 4 detailliertenw Jahre. <br>
  **Produktionsjahr 2015 -> firstYearProperty() <br>
