@@ -1,6 +1,7 @@
 # consumption-converter
-![Screenshot](logo_converter.jpeg)
+![Screenshot](logo_converter.jpeg) <br>
 Custom Control for WindparksFX
+Dieses Custom Control bietet eine klare Übersicht, welche Geräte im Haushalt am meisten Strom im Jahr verbrauchen. Unser Converter nimmt den Jahresschnitt von den Geräten und teilt diese durch die erzeugte Enerige von den Windparks.
 
 # Gebrauch
 
