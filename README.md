@@ -34,10 +34,10 @@ Beispiel:
      <code>   businessControl.fourtfhYearProperty().bind(model.getWindparkProxy().production2018MwhProperty()); </code>
  
  Unsere Properties stehen für die 4 detallierte Jahre. <br>
- Produktionsjahr 2015 -> firstYearProperty() <br>
+ **Produktionsjahr 2015 -> firstYearProperty() <br>
  Produktionsjahr 2016 -> secondYearProperty()<br>
  Produktionsjahr 2017 -> thirdYearProperty()<br>
- Produktionsjahr 2018 -> fourtYearProperty() <br>
+ Produktionsjahr 2018 -> fourtYearProperty()** <br>
  
  **Slider Control**
 1. Fügen Sie zunächste eine Deklaration <code>private SliderControl sliderControl;</code> ein.
