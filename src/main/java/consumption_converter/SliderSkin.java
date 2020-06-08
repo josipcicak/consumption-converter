@@ -144,8 +144,8 @@ class SliderSkin extends SkinBase<SliderControl> {
     }
 
     private void setupBindings() {
-        readOnlyNode.textProperty().bind(getSkinnable().valueProperty().asString(SliderControl.FORMATTED_INTEGER_PATTERN));
-        editableNode.textProperty().bindBidirectional(getSkinnable().userFacingTextProperty());
+        readOnlyNode.textProperty().bindBidirectional(getSkinnable().valueProperty(), new NumberStringConverter());
+        editableNode.textProperty().bindBidirectional(getSkinnable().valueProperty(), new NumberStringConverter());
 
         editableNode.visibleProperty().bind(getSkinnable().readOnlyProperty().not());
         chooserButton.visibleProperty().bind(getSkinnable().readOnlyProperty().not());
