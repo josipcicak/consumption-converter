@@ -1,0 +1,202 @@
+.business-control {
+    -fx-padding:          10;
+    -base-color: rgb(243, 243, 243);
+    -fx-background-color: rgb(255, 255, 250);
+}
+
+.business-control .drawing-pane {
+    -fx-background-color: transparent;
+}
+
+.business-control .editable-node {
+    -fx-font-family:      'ArcaMajora3-Bold';
+    -fx-font-size:        14;
+    -fx-text-fill:        derive(-base-color, -30%);
+    -fx-prompt-text-fill: derive(-base-color, 40%);
+}
+
+.business-control .editable-node:focused {
+    -fx-prompt-text-fill: derive(-base-color, 40%);
+    -fx-highlight-fill:   derive(-base-color, -30%);
+}
+
+.business-control:invalid .editable-node {
+    -fx-font-family: 'Lato Light';
+    -fx-text-fill:   red;
+}
+
+.business-control:mandatory .editable-node:focused {
+    -fx-background-color: white;
+    -fx-border-color:     derive(-base-color, -30%);
+    -fx-border-width:     2;
+    -fx-border-radius:    4;
+}
+
+.business-control .read-only-node {
+    -fx-font-family:     'DS-Digital';
+    -fx-pref-width:      80;
+    -fx-max-width:       1024;
+    -fx-alignment:       center;
+    -fx-content-display: text-only;
+    -fx-font-size:       22;
+    -fx-text-fill:       rgb(139, 86, 70);
+}
+
+.business-control .chooser-button {
+    -fx-font-family:      'FontAwesome';
+    -fx-border-color:     transparent;
+    -fx-background-color: transparent;
+    -fx-min-width:        26;
+    -fx-min-height:       26;
+    -fx-font-size:        14;
+    -fx-text-fill:        derive(-base-color, -30%);
+    -fx-padding:          5;
+    -fx-content-display:  text-only;
+    -fx-cursor:           hand;
+}
+
+.business-control .chooser-button:hover {
+    -fx-background-color:  derive(-base-color, 70%);
+    -fx-background-radius: 1024;
+    -fx-background-insets: 4;
+}
+
+/*
+    Starting css classes for ConverterControl
+    converter-control -> main CSS class
+
+*/
+
+.converter-control .dryerIMG {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+    -fx-spacing: 25px;
+    -fx-border-image-width: auto;
+}
+
+.converter-control .washingMachineIMG {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+}
+
+.converter-control .tvIMG {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+}
+
+.converter-control .moverIMG {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+}
+
+.converter-control .einheiten-foehn {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+    -fx-spacing: 25px;
+}
+
+.converter-control .einheiten-waschmachine {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+    -fx-spacing: 25px;
+}
+
+
+.converter-control .einheiten-rasen {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+    -fx-spacing: 25px;
+}
+
+
+.converter-control .einheiten-fernseher {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+    -fx-spacing: 25px;
+}
+
+.converter-control .title-header {
+    -fx-padding: 10px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d2828;
+    -fx-spacing: 25px;
+}
+
+.background-card {
+    -fx-background-color: white;
+}
+
+.first-icon-row {
+    -fx-hgap: 20px;
+    -fx-padding: 40px;
+
+    -fx-background-color: #ffffff;
+    -fx-background-radius:10px;
+
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(123, 123, 123, 0.8), 10, 0, 0, 0);
+}
+
+.second-icon-row {
+    -fx-hgap: 20px;
+    -fx-padding: 40px;
+
+    -fx-background-color: #ffffff;
+    -fx-background-radius:10px;
+
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(123, 123, 123, 0.8), 10, 0, 0, 0);
+}
+
+.third-icon-row{
+    -fx-hgap: 20px;
+    -fx-padding: 40px;
+
+    -fx-background-color: #ffffff;
+    -fx-background-radius:10px;
+
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(123, 123, 123, 0.8), 10, 0, 0, 0);
+}
+
+.fourth-icon-row{
+    -fx-hgap: 20px;
+    -fx-padding: 40px;
+
+    -fx-background-color: #ffffff;
+    -fx-background-radius:10px;
+
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(three-pass-box, rgba(123, 123, 123, 0.8), 10, 0, 0, 0);
+}
+
+.drawing-pane{
+    -fx-padding: 30;
+}
+
+.button-info {
+    -fx-background-color: transparent;
+    -fx-start-margin: 40;
+}
+

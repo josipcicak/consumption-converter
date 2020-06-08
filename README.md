@@ -1,7 +1,7 @@
 # consumption-converter
 ![Screenshot](logo_converter.jpeg) <br>
 Custom Control for WindparksFX
-Dieses Custom Control bietet eine klare Übersicht, welche Geräte im Haushalt am meisten Strom im Jahr verbrauchen. Unser Converter nimmt den Jahresschnitt von den Geräten und teilt diese durch die erzeugte Enerige von den Windparks.
+Dieser Custom Control bietet eine klare Übersicht, welche Geräte im Haushalt am meisten Strom im Jahr verbrauchen. Unser Converter nimmt den Jahresschnitt von den Geräten und teilt diese durch die erzeugte Enerige von den Windparks.
 
 # Gebrauch
 
@@ -20,11 +20,11 @@ Um dieses Custom Business Control zu brauchen, benötigen Sie die Klasse <code>S
 # Implementieren
 
 Wählen Sie zunächst welches Custom Control Sie implementieren möchten. (Converter oder Slider)
-Danach begeben Sie sich in Ihre gewünschte Klasse wo Sie das UI plazieren möchten.
+Danach begeben Sie sich in Ihre gewünschte Klasse wo Sie das UI platzieren möchten.
 
 **Converter Control**
-1. Fügen Sie zunächste eine Deklaration <code>private ConverterControl convertercontrol;</code> ein.
-2. Im berreich <code>private void initializeParts()</code> initialisieren Sie den Converter mit <code> convertercontrol = new ConverterControl(); </code>
+1. Fügen Sie zunächst eine Deklaration <code>private ConverterControl convertercontrol;</code> ein.
+2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie den Converter mit <code> convertercontrol = new ConverterControl(); </code>
 3. Nun müssen wir die Bindings anpassen. Ersetzen Sie die herkömmliche <code>textProperty()</code> mit unseren Properties.
 Diese können wie gefolgt aussehen.
 Beispiel: 
@@ -33,15 +33,15 @@ Beispiel:
    <code>     businessControl.thirdYearProperty().bind(model.getWindparkProxy().production2017MwhProperty());</code>
      <code>   businessControl.fourtfhYearProperty().bind(model.getWindparkProxy().production2018MwhProperty()); </code>
  
- Unsere Properties stehen für die 4 detallierte Jahre. <br>
+ Unsere Properties stehen für die 4 detaillierte Jahre. <br>
  **Produktionsjahr 2015 -> firstYearProperty() <br>
  Produktionsjahr 2016 -> secondYearProperty()<br>
  Produktionsjahr 2017 -> thirdYearProperty()<br>
  Produktionsjahr 2018 -> fourtYearProperty()** <br>
  
  **Slider Control**
-1. Fügen Sie zunächste eine Deklaration <code>private SliderControl sliderControl;</code> ein.
-2. Im berreich <code>private void initializeParts()</code> initialisieren Sie den Converter mit <code> sliderControl = new SliderControl(); </code>
+1. Fügen Sie zunächst eine Deklaration <code>private SliderControl sliderControl;</code> ein.
+2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie den Converter mit <code> sliderControl = new SliderControl(); </code>
 3. Nun müssen wir die Bindings anpassen. Ersetzen Sie die herkömmliche <code>textProperty()</code> mit unseren Properties.
 Diese können wie gefolgt aussehen.
 Beispiel: 
@@ -51,7 +51,7 @@ Beispiel:
    <code>     sliderControl.valueProperty().bindBidirectional(model.getWindparkProxy().production2017MwhProperty());</code>
      <code>   sliderControl.valueProperty().bindBidirectional(model.getWindparkProxy().production2018MwhProperty()); </code>
  
- Es gibt nur eine Propertie die für alle Jahre gilt: <code>valueProperty()</code>
+ Es gibt nur eine Property die für alle Jahre gilt: <code>valueProperty()</code>
  **WICHTIG!**
  entfernen Sie alle <code> new NumberStrinConverter </code>, dieser Fall tritt nicht auf. (wegen unserer valueProperty()) 
  
