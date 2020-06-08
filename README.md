@@ -63,8 +63,7 @@ Beispiel:
 3. Nun müssen wir die Bindings anpassen. Ersetzen Sie die herkömmliche <code>textProperty()</code> mit unseren Properties.
 Diese können wie gefolgt aussehen.
 Beispiel: 
-<code>sliderControl15.valueProperty().bindBidirectional(model.getWindparkProxy().production2015MwhProperty());
-); </code> <br>
+<code>sliderControl15.valueProperty().bindBidirectional(model.getWindparkProxy().production2015MwhProperty()); </code> <br>
     <code>  sliderControl16.valueProperty().bindBidirectional(model.getWindparkProxy().production2016MwhProperty());</code>
    <code>     sliderControl17.valueProperty().bindBidirectional(model.getWindparkProxy().production2017MwhProperty());</code>
      <code>   sliderControl18.valueProperty().bindBidirectional(model.getWindparkProxy().production2018MwhProperty()); </code>
