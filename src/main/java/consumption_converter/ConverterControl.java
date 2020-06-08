@@ -105,33 +105,33 @@ public class ConverterControl extends Region {
 
         // init images, important! with setImage we set the image elements next to our icons
         imgView.setImage(dryer);
-        imgView.setFitWidth(75);
-        imgView.setFitHeight(75);
+        imgView.setFitWidth(50);
+        imgView.setFitHeight(50);
 
         imgView2.setImage(washingMachine);
-        imgView2.setFitWidth(75);
-        imgView2.setFitHeight(75);
+        imgView2.setFitWidth(50);
+        imgView2.setFitHeight(50);
 
         imgView3.setImage(tv);
-        imgView3.setFitWidth(75);
-        imgView3.setFitHeight(75);
+        imgView3.setFitWidth(50);
+        imgView3.setFitHeight(50);
 
         imgView4.setImage(mover);
-        imgView4.setFitWidth(75);
-        imgView4.setFitHeight(75);
+        imgView4.setFitWidth(50);
+        imgView4.setFitHeight(50);
 
         // init pane
         drawingPane = new StackPane();
         drawingPane.getStyleClass().add("drawing-pane");
 
         spacer = new Region();
-        spacer.setMinWidth(100);
+        spacer.setMinWidth(40);
 
         shortSpacer = new Region();
-        shortSpacer.setMinWidth(100);
+        shortSpacer.setMinWidth(40);
 
         button = new Button();
-        button.getStyleClass().add("button-info");
+        button.getStyleClass().add("button-info-hover");
 
         // Added Tooltip for more information over InfoButton
         final Tooltip tooltipButtonInfo = new Tooltip();
@@ -150,29 +150,31 @@ public class ConverterControl extends Region {
         HBox firstIconRow = new HBox(new VBox(firstYearLabel, einheitenFoehn), imgView);
         firstIconRow.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
         firstIconRow.getStyleClass().add("first-icon-row");
-        firstIconRow.setMinWidth(350);
-        firstIconRow.setMinHeight(150);
+        firstIconRow.setMinHeight(50);
+        firstIconRow.setMaxHeight(100);
 
         HBox secondIconRow = new HBox(new VBox(secondYearLabel, einheitenWaschmachine), imgView2);
         secondIconRow.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
         secondIconRow.getStyleClass().add("second-icon-row");
-        secondIconRow.setMinWidth(350);
-        secondIconRow.setMinHeight(150);
+        secondIconRow.setMinHeight(50);
+        secondIconRow.setMaxHeight(100);
 
         HBox thirdIconRow = new HBox(new VBox(thirdYearLabel, einheitenFernseher), imgView3);
         thirdIconRow.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
         thirdIconRow.getStyleClass().add("third-icon-row");
-        thirdIconRow.setMinWidth(350);
-        thirdIconRow.setMinHeight(150);
+        thirdIconRow.setMinHeight(50);
+        thirdIconRow.setMaxHeight(100);
 
         HBox fourthIconRow = new HBox(new VBox(fourthYearLabel, einheitenRasen), imgView4);
         fourthIconRow.setBackground(new Background(new BackgroundFill(Color.WHITE, CornerRadii.EMPTY, Insets.EMPTY)));
         fourthIconRow.getStyleClass().add("fourth-icon-row");
-        fourthIconRow.setMinWidth(350);
-        fourthIconRow.setMinHeight(150);
+        fourthIconRow.setMinHeight(50);
+        fourthIconRow.setMaxHeight(100);
 
         drawingPane.getChildren().addAll(new VBox(30, title, new HBox(firstIconRow, shortSpacer, secondIconRow, button), new HBox(thirdIconRow, spacer, fourthIconRow)));
         getChildren().add(drawingPane);
+
+        drawingPane.setMinSize(0,0);
     }
 
     private void setupBindings() {

@@ -33,7 +33,7 @@ Beispiel:
    <code>     businessControl.thirdYearProperty().bind(model.getWindparkProxy().production2017MwhProperty());</code>
      <code>   businessControl.fourtfhYearProperty().bind(model.getWindparkProxy().production2018MwhProperty()); </code>
  
- Unsere Properties stehen für die 4 detaillierten Jahre. <br>
+ Unsere Properties stehen für die 4 detailliertenw Jahre. <br>
  **Produktionsjahr 2015 -> firstYearProperty() <br>
  Produktionsjahr 2016 -> secondYearProperty()<br>
  Produktionsjahr 2017 -> thirdYearProperty()<br>
