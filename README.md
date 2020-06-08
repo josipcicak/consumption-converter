@@ -23,17 +23,17 @@ Wählen Sie zunächst welches Custom Control Sie implementieren möchten. (Conve
 Danach begeben Sie sich in Ihre gewünschte Klasse wo Sie das UI platzieren möchten.
 
 **Converter Control**
-1. Fügen Sie zunächst vier Deklarationen 
+1. Fügen Sie zunächst vier Deklarationen <br>
 <code>private ConverterControl convertercontrol15;</code><br>, 
-<code>private ConverterControl convertercontrol16;</code>, 
-<code>private ConverterControl convertercontrol17;</code>, 
-<code>private ConverterControl convertercontrol18;</code> ein.
+<code>private ConverterControl convertercontrol16;</code><br>, 
+<code>private ConverterControl convertercontrol17;</code><br>, 
+<code>private ConverterControl convertercontrol18;</code> ein.<br>
 
-2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie die Converter mit 
+2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie die Converter mit <br>
 <code> convertercontrol15 = new ConverterControl(); </code><br>, 
-<code> convertercontrol16 = new ConverterControl(); </code>, 
-<code> convertercontrol17 = new ConverterControl(); </code>, 
-<code> convertercontrol18 = new ConverterControl(); </code>
+<code> convertercontrol16 = new ConverterControl(); </code><br>, 
+<code> convertercontrol17 = new ConverterControl(); </code><br>, 
+<code> convertercontrol18 = new ConverterControl(); </code<br>>
 
 3. Nun müssen wir die Bindings anpassen. Ersetzen Sie die herkömmliche <code>textProperty()</code> mit unseren Properties.
 Diese können wie gefolgt aussehen.
