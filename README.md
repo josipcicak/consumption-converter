@@ -24,13 +24,13 @@ Danach begeben Sie sich in Ihre gewünschte Klasse wo Sie das UI platzieren möc
 
 **Converter Control**
 1. Fügen Sie zunächst vier Deklarationen 
-<code>private ConverterControl convertercontrol15;</code>, 
+<code>private ConverterControl convertercontrol15;</code><br>, 
 <code>private ConverterControl convertercontrol16;</code>, 
 <code>private ConverterControl convertercontrol17;</code>, 
 <code>private ConverterControl convertercontrol18;</code> ein.
 
 2. Im Bereich <code>private void initializeParts()</code> initialisieren Sie die Converter mit 
-<code> convertercontrol15 = new ConverterControl(); </code>, 
+<code> convertercontrol15 = new ConverterControl(); </code><br>, 
 <code> convertercontrol16 = new ConverterControl(); </code>, 
 <code> convertercontrol17 = new ConverterControl(); </code>, 
 <code> convertercontrol18 = new ConverterControl(); </code>
