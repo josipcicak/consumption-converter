@@ -16,6 +16,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Popup;
+import javafx.util.converter.NumberStringConverter;
+
 
 class SliderSkin extends SkinBase<SliderControl> {
     private static final int IMG_SIZE   = 12;
