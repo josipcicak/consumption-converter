@@ -1,3 +1,7 @@
+.slider-control {
+    -fx-padding:          10;
+    -base-color: rgb(243, 243, 243);
+}
 
 .slider-control .drawing-pane {
     -fx-background-color: transparent;
@@ -20,12 +24,6 @@
     -fx-text-fill:   red;
 }
 
-.slider-control:mandatory .editable-node:focused {
-    -fx-background-color: white;
-    -fx-border-color:     derive(-base-color, -30%);
-    -fx-border-width:     2;
-    -fx-border-radius:    4;
-}
 
 .slider-control .read-only-node {
     -fx-font-family:     'DS-Digital';
