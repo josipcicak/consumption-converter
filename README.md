@@ -9,17 +9,19 @@ Dieser Custom Control bietet eine klare Übersicht, welche Geräte im Haushalt a
 
 Zum zunächst unser Custom Control zu implementieren müssen Sie das consumption-converter Projekt herunterladen. Kopieren Sie den gesamten <code>consumption_converter</code> Ordner und den Ordner mit den Ressourcen.
 
-**UI Converter Dashboard**
+**UI Converter Dashboard**<br>
+
 ![Screenshot](converter_info.png) <br>
 
 Um dieses Custom Control zu brauchen, benötigen Sie die Klasse <code>ConverterControl.java</code><br>
 
-<br>**Business control slider**
+**Business control slider**<br>
+
 ![Screenshot](slider_info.png) <br>
 
 Um dieses Custom Business Control zu brauchen, benötigen Sie die Klasse <code>SliderControl.java</code><br>
 
-<br># Implementieren
+# Implementieren
 
 Wählen Sie zunächst welches Custom Control Sie implementieren möchten. (Converter oder Slider)
 Danach begeben Sie sich in Ihre gewünschte Klasse wo Sie das UI platzieren möchten.
