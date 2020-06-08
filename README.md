@@ -7,7 +7,7 @@ Dieser Custom Control bietet eine klare Übersicht, welche Geräte im Haushalt a
 
 **Package**
 
-Zum zunächst unser Custom Control zu implementieren müssen Sie das consumption-converter Projekt herunterladen. Kopieren Sie den Gesamten <code>consumption_converter</code> Ordner.
+Zum zunächst unser Custom Control zu implementieren müssen Sie das consumption-converter Projekt herunterladen. Kopieren Sie den gesamten <code>consumption_converter</code> Ordner.
 
 **UI Converter Dashboard**
 
@@ -33,7 +33,7 @@ Beispiel:
    <code>     businessControl.thirdYearProperty().bind(model.getWindparkProxy().production2017MwhProperty());</code>
      <code>   businessControl.fourtfhYearProperty().bind(model.getWindparkProxy().production2018MwhProperty()); </code>
  
- Unsere Properties stehen für die 4 detaillierte Jahre. <br>
+ Unsere Properties stehen für die 4 detaillierten Jahre. <br>
  **Produktionsjahr 2015 -> firstYearProperty() <br>
  Produktionsjahr 2016 -> secondYearProperty()<br>
  Produktionsjahr 2017 -> thirdYearProperty()<br>
